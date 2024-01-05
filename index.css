@@ -1,13 +1,4 @@
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(245, 19, 19)), url("https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* width: 50%;
-    height: 100vh; */
-    position: relative;
-    margin: 0; /* Add this line to remove default body margin */
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -20,3 +11,5 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
