@@ -94,16 +94,35 @@
             var yourName = document.getElementById("yourName").value.trim();
             var partnerName = document.getElementById("partnerName").value.trim();
 
-            if (yourName === "" || partnerName === "") {
+            if (yourName == "" || partnerName == "") {
                 alert("Please enter both names!");
                 return;
             }
+            else if(yourName.length<=2){
+                alert("min lenght is 3");
+            }
 
-            var lovePercentage = Math.floor(Math.random() * 101); // Random percentage between 0 and 100
+            else if(!isNaN(yourName)){
+                alert("Numbers are not allowed")
+            }
 
-            var resultMessage = yourName + " and " + partnerName + "'s Love Percentage is: " + lovePercentage + "%";
+            else if(partnerName.length<=2){
+                alert("min lenght is 3");
+            }
 
-            document.getElementById("result").innerText = resultMessage;
+            else if(!isNaN(partnerName)){
+                alert("Numbers are not allowed")
+            }
+
+            else{
+                var lovePercentage = Math.floor(Math.random() * 101); // Random percentage between 0 and 100
+
+var resultMessage = yourName + " and " + partnerName + "'s Love Percentage is: " + lovePercentage + "%";
+
+document.getElementById("result").innerText = resultMessage;
+            }
+
+           
         }
     </script>
 
